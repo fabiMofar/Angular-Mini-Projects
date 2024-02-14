@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --border-radius: 10px;
+  --spacing-step: 8px;
+  --color-background: #fff;
+  --color-accent-secondary: #5affc0;
+  --color-accent-secondary-darker: #15fa5a;
+  --color-text: #263238;
+  --color-text-light: #8b6067;
+}
+
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins";
+  background-color: var(--color-background);
+}
+form {
+  padding: calc(var(--spacing-step) * 3);
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  background: var(--color-background);
+  min-width: 395px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label,
+input:not([type="checkbox"]),
+fieldset,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-text-light);
+  margin-top: var(--spacing-step);
+}
+
+button {
+  margin-top: calc(var(--spacing-step) * 2);
+  background-color: var(--color-accent-secondary);
+  border: var(--color-accent-secondary-darker) 1px solid;
+  color: var(--color-text);
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    background-color: var(--color-accent-secondary-darker);
+    border: var(--color-accent-secondary) 1px solid;
+  }
+  &.reset-button {
+    background-color: transparent;
+    border: var(--color-primary) 1px solid;
+  }
+}
+
+input {
+  background-color: #e8e8e8;
+  font-size: 18px;
+  padding: 10px 11px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+button {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 11px;
+}
