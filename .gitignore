@@ -42,6 +42,7 @@ build/Release
 node_modules/
 jspm_packages/
 ./reusable-form/node_modules
+./sample-reactive-forms/node_modules
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
